@@ -38,10 +38,7 @@ def middle_score(score_school):
             value = value + item
     print(int(value/counter))
 
-def class_score(score_school):
-    
-
-
-
-
 middle_score(score_school)
+
+
+def class_score(score_school):
