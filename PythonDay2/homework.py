@@ -30,3 +30,5 @@ def strouk(one, two):
         print('Что-то пошло не так')
 
 strouk("laa", "learn")
+
+#Test
