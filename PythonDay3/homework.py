@@ -47,27 +47,27 @@
 #
 # class_score(score_school)
 
-# school_classes= [
-#                 {'school_class': '4a', 'scores': [3,4,4,5,2]},
-#                 {'school_class': '5b', 'scores': [5,2,3,5,4]},
-#                 {'school_class': '6a', 'scores': [4,5,2,4,3]}
-#                 ]
-#
-# #Посчитать и вывести средний балл по всей школе.
-# def average_school (dict_list):
-#     for item in dict_list:
-#         class_res=0
-#         len_avg=0
-#         class_res=sum(item.get('scores'))+class_res
-#         len_avg=len(item.get('scores'))+len_avg
-#
-#     res = class_res/len_avg
-#     print ('Classes average: '+str(res) )
-# average_school(school_classes)
-# #Посчитать и вывести средний балл по каждому классу.
-# def class_avr(dict_list):
-#     for item in dict_list:
-#         school_class= item.get('school_class')
-#         res =  sum(item.get('scores'))/len(item.get('scores'))
-#         print ('Class: '+school_class+' average: '+str(res) )
-# class_avr(school_classes)
+school_classes= [
+                {'school_class': '4a', 'scores': [3,4,4,5,2]},
+                {'school_class': '5b', 'scores': [5,2,3,5,4]},
+                {'school_class': '6a', 'scores': [4,5,2,4,3]}
+                ]
+
+#Посчитать и вывести средний балл по всей школе.
+def average_school (dict_list):
+    for item in dict_list:
+        class_res=0
+        len_avg=0
+        class_res=sum(item.get('scores'))+class_res
+        len_avg=len(item.get('scores'))+len_avg
+
+    res = class_res/len_avg
+    print ('Classes average: '+str(res) )
+average_school(school_classes)
+#Посчитать и вывести средний балл по каждому классу.
+def class_avr(dict_list):
+    for item in dict_list:
+        school_class= item.get('school_class')
+        res =  sum(item.get('scores'))/len(item.get('scores'))
+        print ('Class: '+school_class+' average: '+str(res) )
+class_avr(school_classes)
